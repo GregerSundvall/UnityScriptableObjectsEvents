@@ -3,13 +3,14 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Destroyer : MonoBehaviour
+public class BoxDestroyer : MonoBehaviour
 {
-    [SerializeField] private GameEvent _onClicked;
+    [SerializeField] private GameEvent _boxDestroyed;
     
     private void OnMouseDown()
     {
-        _onClicked.Invoke();
+        _boxDestroyed.Invoke();
+        
         Destroy(gameObject);
     }
 }
