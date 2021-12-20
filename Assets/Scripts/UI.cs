@@ -10,6 +10,7 @@ public class UI : MonoBehaviour
     
     public void UpdateScore()
     {
+        Debug.Log("UI/Updatescore run");
         GetComponent<Text>().text = _score.ToString();
     }
 }

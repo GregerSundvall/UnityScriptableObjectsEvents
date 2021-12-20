@@ -13,6 +13,7 @@ public class Player : MonoBehaviour
     public void Increase()
     {
         _score.IncreaseWith(pointsPerDestroy);
+        Debug.Log("Invoking score changed...");
         _scoreChangedEvent.Invoke();
     }
     

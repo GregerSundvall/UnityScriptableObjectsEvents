@@ -10,6 +10,7 @@ public class GameEvent : ScriptableObject
     
     public void Invoke()
     {
+        Debug.Log($"Game event {this.name} invoked");
         foreach (var listener in _listeners)
         {
             listener.RaiseEvent();

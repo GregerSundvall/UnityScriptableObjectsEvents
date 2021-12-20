@@ -7,6 +7,10 @@ public class IntVar : ScriptableObject
 {
     private int _value;
 
+    public void Increase()
+    {
+        _value++;
+    }
     public int GetInt()
     {
         return _value;
